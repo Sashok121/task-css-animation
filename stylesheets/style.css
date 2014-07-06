@@ -7,7 +7,7 @@ body {
     height: 1000px;
 }
 .container {
-    -webkit-animation:slide1 3s  ease-in-out infinite;
+    -webkit-animation:slide1 9s  ease-in-out infinite;
 }
 .cube, .flet {
     width: 15em;
