@@ -20,7 +20,7 @@ div.cube {
     -webkit-transform: rotate3d(1,1,0,45deg);
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    -webkit-animation: slide 6s  ease-in-out infinite;
+    -webkit-animation: slide 6s  ease-in-out infinite alternate;
 }
 figure.flet {
     position: absolute;
@@ -57,17 +57,17 @@ figure.flet {
 }
 @-webkit-keyframes slide {
     from {
-        -webkit-transform: rotate(0deg) translateX(-10em) rotate3d(1,1,1,0deg);
+        -webkit-transform: rotate(0deg)  translateY(-10em) translateX(-10em) rotate3d(1,1,1,0deg) ;
     }
     to {
-        -webkit-transform: rotate(360deg) translateX(-10em) rotate3d(1,1,1,360deg);
+        -webkit-transform: rotate(360deg)  translateY(-20em) translateX(-10em) rotate3d(1,1,1,360deg) ;
     }
 }
 @keyframes slide {
     from {
-        -webkit-transform: translateX(-10em) rotate3d(1,1,1,0deg);
+        transform: rotate(0deg) translateX(-10em) rotate3d(1,1,1,0deg) translateX(50%);
     }
     to {
-        -webkit-transform: translateX(-10em) rotate3d(1,1,1,360deg);
+        transform: rotate(360deg) translateX(-10em) translateX(-10em) rotate3d(1,1,1,360deg) ;
     }
 }
