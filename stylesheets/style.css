@@ -6,9 +6,7 @@ body {
     padding-top: 15em;
     height: 1000px;
 }
-.container {
-    -webkit-animation:slide1 9s  ease-in-out infinite;
-}
+
 .cube, .flet {
     width: 15em;
     height: 15em;
@@ -22,7 +20,7 @@ div.cube {
     -webkit-transform: rotate3d(1,1,0,45deg);
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-    -webkit-animation: slide 3s  ease-in-out infinite;
+    -webkit-animation: slide 6s  ease-in-out infinite;
 }
 figure.flet {
     position: absolute;
@@ -59,33 +57,17 @@ figure.flet {
 }
 @-webkit-keyframes slide {
     from {
-        -webkit-transform: rotate3d(1,1,1,0deg);
+        -webkit-transform: rotate(0deg) translateX(-10em) rotate3d(1,1,1,0deg);
     }
     to {
-        -webkit-transform: rotate3d(1,1,1,360deg);
+        -webkit-transform: rotate(360deg) translateX(-10em) rotate3d(1,1,1,360deg);
     }
 }
 @keyframes slide {
     from {
-        -webkit-transform: rotate3d(1,1,1,0deg);
+        -webkit-transform: translateX(-10em) rotate3d(1,1,1,0deg);
     }
     to {
-        -webkit-transform: rotate3d(1,1,1,360deg);
-    }
-}
-@-webkit-keyframes slide1 {
-    from {
-        -webkit-transform: rotate(0deg) translateX(-10em);
-    }
-    to {
-        -webkit-transform: rotate(360deg) translateX(-10em);
-    }
-}
-@keyframes slide1 {
-    from {
-        -webkit-transform: rotate(0deg) translateX(-10em);
-    }
-    to {
-        -webkit-transform: rotate(360deg) translateX(-10em);
+        -webkit-transform: translateX(-10em) rotate3d(1,1,1,360deg);
     }
 }
